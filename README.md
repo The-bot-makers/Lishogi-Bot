@@ -30,3 +30,7 @@ Engine communication code taken from https://github.com/TheYoBots/Lishogi-Bot by
 - Then 'Enable Automatic Deploys' and then select the 'master' branch (which is already done by default) and Click 'Deploy'.
 - Once it has been deployed, go to 'Resources' tab on heroku and enable 'worker' (bash startbot.sh) dynos. (do note that if you don't see any dynos in the 'Resources' tab, then you must refresh your heroku page.)
 - You're now connected to lishogi and awaiting challenges! Your bot is up and ready!
+
+### Important Notes
+Make sure to disable/switch off the dyno once you are not monitoring your bot, for the bot used to crash in bullet often. In the recent very few games, this stopped happening, but until it is fully tested, switch off the dyno when you are monitoring your bot. If any error shows up in the logs, immediately restart all dynos by more-restart all dynos.
+Also swith off your bot when you are shutting your computer down, else it might crash. This happens due to the bot losing connection with heroku. To prevent this your internet has to be running smoothly and constantly connected to heroku.
