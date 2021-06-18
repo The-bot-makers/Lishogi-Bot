@@ -13,7 +13,7 @@ engine:                      # engine settings
     Threads: 5               # max CPU threads the engine can use
     Use NNUE: true           # allow bot to use neural networks
     EvalFile: shogi.nnue     # shogi neural networks file
-  protocol: "usi"            # "usi"
+    protocol: "usi"            # "usi"
 #   go_commands:             # additional options to pass to the USI go command
 #     nodes: 1               # Search so many nodes only.
 #     depth: 5               # Search depth ply only.
