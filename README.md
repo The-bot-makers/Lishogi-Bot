@@ -23,12 +23,12 @@ Engine communication code taken from https://github.com/TheYoBots/Lishogi-Bot by
 ### How to Use
 
 - Fork this repository.
-- Edit only your token in the config.yml file over [here](/config.yml#L1).
 - Create a new heroku app.
 - Go to the 'Deploy' tab and click 'Connect to GitHub'.
 - Click on 'search' and then select your fork of this repository.
 - Then 'Enable Automatic Deploys' and then select the 'master' branch (which is already done by default) and Click 'Deploy'.
 - Once it has been deployed, go to 'Resources' tab on heroku and enable 'worker' (bash startbot.sh) dynos. (do note that if you don't see any dynos in the 'Resources' tab, then you must wait for about 5 minutes and then refresh your heroku page.)
+- Finally go to your `Settings` tab and then under `Config Vars` click on `Reveal Config Vars` and then in the place of `key` type in `LISHOGI_BOT_TOKEN` and in the place of `value` add your Lishogi Bot Token.
 - You're now connected to lishogi and awaiting challenges! Your bot is up and ready!
 
 ### Important Notes
